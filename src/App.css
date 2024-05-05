@@ -1,0 +1,124 @@
+*{
+  padding:0;
+  margin: 0;
+}
+body{
+  background-color:black;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+
+.container{
+  background-color: black;
+  border: 5px solid black;
+  position: absolute;
+  max-width: 90%;
+  left: 5%;
+  right: 5%;
+  height: 100%;
+  
+}
+
+.heading{
+  font-size: 72px;
+  background: -webkit-linear-gradient(#b43434, #8a0ddd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.addtask{
+  background-color: rgb(119, 121, 122);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.addbtn{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding:  5px;
+  margin: 5px;
+  display: inline-block;
+  text-align: right;
+  left:15px;
+}
+
+.addbtn:hover{
+  cursor: pointer;
+  background-color: aliceblue;
+  color:black;
+}
+
+.tasks{
+  background-color: Black;
+  border: 1px solid white;
+  font-size:1.2em;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.checkbox{
+  display: inline-block;
+  position: relative;
+  border-color: green;
+  background-color: #0aa63e;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  cursor:pointer;
+}
+
+.checkbox::after{
+  
+  background-color: #0aa63e;
+}
+
+.taskterm {
+  border: none;
+  width: 80%;
+  color:white;
+  cursor: text;
+  background-color: rgb(119, 121, 122);
+  position: absolute;
+  left:3px;
+  top:12%;
+}
+.taskterm:focus {
+  border: none;
+}
+.taskterm::placeholder{
+  color:#b6b4b4;
+  padding-left: 5px;
+}
+.deleteicon{
+  background-color: black;
+  color:red;
+  border: none;
+}
+.taskinst{
+  padding-right: 10px;
+}
+.completed{
+  text-decoration: line-through;
+}
+
+.heading2{
+  display: block;
+  font-size: large;
+  font-weight: bold;
+}
+
+.notask{
+  border: 2px solid white;
+  padding: 5px;
+  margin:5px;
+  display: flex;
+  justify-content: center;
+  background-color: #aa8c8c;
+}
