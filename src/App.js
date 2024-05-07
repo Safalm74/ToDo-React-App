@@ -2,9 +2,11 @@ import './App.css';
 import React, {useState,useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faTrash } from '@fortawesome/free-solid-svg-icons';
+import { HashRouter } from "react-router-dom";
 
 function Checkbox(props){
   return(
+    <HashRouter base="/">
     <input
         type='checkbox'
         className='checkbox'
@@ -17,6 +19,7 @@ function Checkbox(props){
         }}
         
         />
+        </HashRouter>
   )
 }
 function ListCompeted(props){
